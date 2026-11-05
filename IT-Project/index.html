@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	  <!--
+		Main page for IT Project
+		
+         Filename: pop_home.html
+         Author: Billie Jo Westfall
+         Date:   8/30/26
+   
+      -->
+	<meta charset ="utf8" />
+	<link href="pop_reset.css" rel="stylesheet"  />
+	<link href="pop_styles.css" rel="stylesheet"  />
+	<script src="pop_formmessage.js"></script>
+	
+	</head>
+		
+	<body>
+	
+		<header>
+			<img src="pop_logo.png" id="logoImg" alt="navigation" usemap="#navMap"/>
+			<map name="navMap">
+				<area shape="rect" coords="380,150,440,173" alt="Home" href="pop_home.html"/>
+				<area shape="rect" coords="555,120,640,155" href="pop_history.html" alt="History"/>
+				<area shape="rect" coords="710,170,860,210" href="pop_components.html" alt="Components"/>
+				<area shape="rect" coords="895,80,945,110" href="pop_uses.html" alt="Uses"/>
+			</map>
+		</header>
+		
+		<div id= "main">
+			<aside id="homeLeft">
+				<dl>
+					<dt> Projector </dt>
+					<dd> device used in tandem with a computer to display an image or video on a larger scale</dd>
+					<dt> Brightness </dt>
+					<dd> The amout of light a projector shows on a screen, usually measured by Lumens </dd>
+					<dt> Lumens </dt>
+					<dd> The measurement of visible light used. A lighter room would need more lumens to be visible, while a darker room would require less</dd>
+				</dl>
+		
+			</aside>
+			
+			<section id = "homeCenter">
+				
+				<h1><i>Projectors</i></h1>
+				<img src="homeImg.avif" alt="temp">
+				
+				<p> When most are asked to think of a type of technology,
+					the first thing to come to mind is rarely projectors. 
+					Of course, it makes sense for most to say  laptops, 
+					phones, computers, or cameras. That being said, 
+					projectors are still a leading device in fields like entertainment,
+					corporations, theatre, cinemas, and education!
+				</p>
+				
+				
+				<p> In the next couple pages, we dive into the details of this underrated equipment.
+					We follow the history of projectors all the way back to 1600s and what they could be in the future.
+					Next, we disect what goes into the use of this technology, and what it would typically cost. 
+					We then tie it all together by outlining how often projectors are actually used in day to day life.
+				</p>
+				
+			</section>
+			
+			<aside id="homeRight">
+				<dl>
+					<dt> Contrast </dt>
+					<dd> The amount of difference between lighter colors and darker colors</dd>
+					<dt> Resolution </dt>
+					<dd> the amount of pixels used to create an image. The higher the resolution, the more detailed the image.</dd>
+					<dt> aspect Ration </dt>
+					<dd> the ratio comparing height to width of the image or video being displayed. This would be shown as width:height.</dd>
+				</dl>
+			</aside>
+		</div>
+		<footer>
+			<h3>All sources used in the creation of this website is linked here!</h3>
+			<ul>
+				<li><a href="https://awolvision.com/blogs/awol-vision-blog/when-were-projectors-invented"><b>AWOL Timeline of Projectors</b></a></li>
+				<li>- was used in the creation of my timeline component of the <i>History</i> page</li>
+				<li><a href="https://fudonipower.com/blogs/news/the-future-of-projectors-cutting-edge-technologies-redefining-visual-experiences?srsltid"><b>FUDONI The Future of Projectors</b></a></li>
+				<li>- was used to suppliment the <i>History</i> page and give insight on what to expect in years to come</li>
+				<li><a href="https://www.projectorcentral.com/projectors-101.cfm#basics"><b>Progector Central Projectors 101</b></a></li>
+				<li>- was used as main source for various pages and topics like components, uses, and definitions</li>
+			</ul>
+			
+			
+			
+		
+		<form id="survey">
+		<h2>Complete Survey for Rewards!</h2>
+			<fieldset id="userInfo">
+				<legend>Survey</legend>
+				<div class="formRow">
+					<label for="fname">First Name*</label>
+					<input type="text" id="fname" name="fname" required><br>
+					<label for="lname">Last Name*</label>
+					<input type="text" id="lname" name="lname" required><br>
+				</div>
+				
+				<div class="formRow">
+					<label for="phone">Phone number*</label>
+					<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" 
+						   pattern="(?:\d{10}|\(\d{3}\)\s\d{3}-\d{4}|\d{3}-\d{4})" required />
+				</div>
+				
+				<div class="formRow">
+				<label for="ageSpin">Age*</label>
+					<input name="age" id="ageSpin" type="number"
+					value="1" step="1" min="0" max="100" />
+				</div>
+				
+				<div class="formRow">
+					<p>How did you Hear about us?</p>
+					<input type="radio" id="friend" name="how_heard" value="Friend">
+					<label for="Friend">Friend</label><br>
+					<input type="radio" id="work" name="how_heard" value="Work">
+					<label for="work">Work</label><br>
+					<input type="radio" id="school" name="how_heard" value="School">
+					<label for="school">School</label><br>
+					<input type="radio" id="other" name="how_heard" value="Other">
+					<label for="other">Other</label>
+				</div>
+				
+				<div class="formRow">
+					<label for="commBox">Tell us how to improve our website!</label>
+					<textarea name="custExp" id="commBox"></textarea>
+				</div>
+			</fieldset>
+			
+			<div id="buttons">
+				<input type="submit" value="Submit Survey" />
+				<input type="reset" value="Reset" />
+			</div>
+		</form>
+			
+			
+		</footer>
+
+	</body>
+
+</html>

@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+@font-face {
+   font-family: "Verdana";
+}
+
+/*
+	main style sheet for IT Project
+  
+	Filename: pop_styles.css
+	Author: Billie Jo Westfall
+	Date: 9/2/2026
+*/
+
+/* HTML and Body Styles */
+
+/* ai suggested using base color similar to background image to avoid flashing bright colors */
+html {
+	background-color: #60A3E7;
+	background-image: url("html_img3.jpg");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+
+}
+
+body{
+	font-family: "Verdana", sans-serif;
+	font-size: 15px;
+	color: #291711ff;
+	background: #accbec;
+	box-shadow: 0px 0px 30px #291711ff;
+	min-height: 98%;
+	height: auto;
+	max-width: 1024px;
+	min-width: 420px;
+	margin: 0px auto;
+	margin-top: 1%;
+	position: relative;
+	display: flex;
+	flex-flow: column;   
+}
+
+header > #logoImg{
+	margin: 0px auto;
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+#main {
+	display: flex;
+	width: 100%;
+	flex: 1;
+}
+
+#homeLeft{
+	width: 18%;
+	background: linear-gradient( 0deg, #fdf8c4 0%, #accbec 50%, #35546eff 130%);
+}
+
+
+/* used ai to troubleshoot floating aside element to right, turns out that dosnt work with a flexbox layout*/
+#homeRight{
+	width: 18%;
+	margin-left: auto;
+	background: linear-gradient( 0deg, #fdf8c4 0%, #accbec 50%, #35546eff 130%);
+}
+
+
+
+
+
+/* text styles ***************************************************************************************************************/
+
+#homeCenter{
+	width: 64%;
+}
+
+#homeCenter > p {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 3em 2em;
+	text-indent: 1em;
+	padding: 20px auto;
+	max-width: 48%;
+	min-height: 5em;
+}
+.compP > ol {
+	font-size: 1em;
+	list-style-type: disc;
+	line-height: 1.5em;
+	margin: 2em 3em;
+	padding: 20px auto;
+	max-width: 55%;
+}
+
+.compP > p {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 4em 1em 1em 1em;
+	text-indent: 1em;
+	padding: 20px auto;
+	max-width: 90%;
+	min-height: 5em;
+}
+
+}
+.histP > p {
+	margin: 3em 15px;
+	margin-bottom: 1em;
+	padding: 20px auto;
+	max-width: 80%;
+	min-height: 8em;
+}
+
+#homeCenter > h1 {
+	font-size: 3em;
+	padding: 15px;
+}
+
+
+
+/* Description Lists ********************************************************************************************************/
+dl > dt{
+	margin: 30px 10px 5px 15px;
+	font-size: 1em;
+}
+
+dl > dd{
+	border-radius: 5px;
+	margin: 5px 15px 30px 15px;
+	font-size: 0.8em;
+}
+
+dl > dd:nth-of-type(1) {
+	color: #fdf8c4;
+}
+
+dl > dd:nth-of-type(2) {
+	color: #35546eff;
+}
+
+dl > dd:nth-of-type(3) {
+	color: #291711ff;
+}
+
+dl > dt:nth-of-type(1) {
+	color: #fdf8c4;
+}
+
+dl > dt:nth-of-type(2) {
+	color: #35546eff;
+}
+
+dl > dt:nth-of-type(3) {
+	color: #291711ff;
+}
+
+/* photots***************************************************************************************************************************************/
+
+/* chatgpt was used to help torubleshoot pictures not lining up*/
+#homeCenter img{
+	display: block;
+    margin: 1em 1em 1em auto;
+    width: 35%;
+    height: auto;
+    float: right;
+    clear: right;
+    border-radius: 1em;
+}
+
+
+#homeCenter img:nth-of-type(2){
+
+	height: 24%;
+}
+
+/*Video styles************************************************************************************************************************************/
+
+.compP iframe {
+	margin: 0em 2em 1em 1em;
+	border-radius: 1em;
+	float: right;
+}
+
+
+
+
+/*Table styles************************************************************************************************************************************/
+
+table, th, td{
+	border-collapse: collapse;
+	color: #35546eff;
+	border: 2px solid #35546eff;
+	padding: 1em;
+}
+
+table{
+	margin: auto auto;
+	margin-bottom: 1em;
+}
+
+th {
+	background: linear-gradient(0deg, #35546eff 0%, #accbec 50%, #35546eff 130%);
+	min-width: 12em;
+}
+td {
+	background: linear-gradient(0deg, #E8DE91 0%, #fdf8c4 50%, #E8DE91 130%);
+	font-size: 0.8em;
+}
+
+/* Timeline Styles **********************************************************************************************/
+
+#homeCenter .Timeline img{
+	width: 40%;
+	height: 100%;
+	float: left;
+	border-radius: 0px;
+	margin: auto;
+	margin-top: 1em;
+}	
+
+#Timeline area{
+	cursor: pointer;
+}
+
+#timelineInfo {
+	float: right;
+	width: 50%;
+	border-radius: 1em;
+	background-color: #fdf8c4;
+	margin: 1em 1em;
+	padding: 2em 1em;
+	height: 38em;
+	
+	opacity: 1;
+	animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacty: 1;
+	}
+}
+
+#timelineInfo p{
+	
+	min-height: 40%;
+}
+
+#timelineInfo img{
+	width: 60%;
+	height: auto;
+}
+
+/* Footer Styles ***********************************************************************************************/
+
+/* Google ai was used to help better organize my links in a proper and respectful way */
+footer {
+	padding: 24px 16px;
+	font-size: 14px;
+	color: #291711ff;
+	border-top: 2px solid #fdf8c4;
+	background-color: #accbec;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+footer h3{
+	font-size: 1.2em;	
+}
+
+
+footer a {
+  color: #291711ff;
+  text-decoration: none;
+}
+
+footer a:link {
+	color: #291711ff;
+}
+
+footer a:hover {
+  color: #fdf8c4;
+}
+
+footer li:nth-of-type(even){
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}
+
+/*Form Syles*******************************************/
+
+form {
+	width: 35%;
+	margin-left: auto;
+}
+
+form p {
+	margin: 0.5em 0.5em;
+}
+
+input {
+	margin: 0.5em 0.5em;
+}
+	
+.formRow {
+	background-color: #fdf8c4;
+	border-radius: 1em;
+	padding-left: 0.5em;
+	margin: 0.5em 0.5em;
+}
+
+div#buttons {
+	justify-self: center;
+}
