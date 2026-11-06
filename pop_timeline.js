@@ -19,12 +19,28 @@
 	
 	// array of text
 	const textArray = [
-	"first event for Magic lantern",
-	"second event for the film projectos",
-	"third event for LCD projectors",
-	"fourth event DLP Tech",
-	"2000s /now event",
-	"sixth event, the future"
+	"The Magic Lanter was one of the first noticeable examples of projection technology. \
+	This was created by the Dutch scientist, Christiaan Huygens. \
+	The magic lantern was composed of painted see through slides, a light source, \
+	and a lense. This light source tended to be candles or oil lamps. latern on, \
+	stronger light sources like the Argand Lamp in the late 1700s." ,
+	"George Eastman created the film roll, which launched the ability \
+	to make motion pictures with projectors. Following this, competition \
+	grew on who could make a device to weild the new film roll. This led to the creation of multiple versions of film projectors.\
+	A good example would be the Eidoloscope, created by Woodville Latham and his family in the United States.",
+	"After years of projector development, the use for projectors expanded. So did the technology!\
+	Liquid Crystal Display, better known as LCD, was created by Gene Dolgof. \
+	LCD works by passing light through a series of mirrors. These mirrors seperate \
+	colors, and created the image pixel by pixel. It is then recombined.",
+	"In a similar time frame, Dr. Larry Hornbeck creted Digital Light Processing. \
+	DLP uses a chip with millions of microscopic mirrors that tilt constantly. \
+	A beam of light is projected and red, green, and blue images are projected. This happens so fast that the colors blend together.",
+	"In the present day, we have 4K resolution and stronger light sources. Even \
+	with these improved features, the older technologies are still utilized today! \
+	In Fact, most projecotrs use LCD or DLP. Now, Projectors are used in large and small scale.",
+	"But, what does the future hold for us? Some speculate new technologies being made for longer and more energy friendly projectors.\
+	The development of lenses creates ultra short distances in which projectors can work! Of course with most modern things, \
+	there is room for AI integration for voice control. Lastly, Holographs and interactive mapping is becoming a reality!"
 	];
 	
 	
