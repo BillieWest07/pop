@@ -5,18 +5,17 @@
 	  <!--
 		Main page for IT Project
 		
-         Filename: pop_home.html
+         Filename: pop_history.html
          Author: Billie Jo Westfall
          Date:   8/30/26
    
       -->
-	<meta charset ="utf8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="pop_reset.css" rel="stylesheet"  />
-	<link href="pop_styles.css" rel="stylesheet"  />
-	<script src="pop_formmessage.js"></script>
-	<script src="pop_timeline.js" defer></script>
-	
+		<meta charset ="utf8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="pop_reset.css" rel="stylesheet"  />
+		<link href="pop_styles.css" rel="stylesheet"  />
+		<script src="pop_formmessage.js"></script>
+		<script src="pop_timeline.js" defer></script>
 	</head>
 
 	<body>
@@ -24,10 +23,10 @@
 		<header>
 			<img src="pop_logo.png" id="logoImg" alt="navigation" usemap="#navMap"/>
 			<map name="navMap">
-				<area shape="rect" coords="380,150,440,173" alt="Home" href="index.html"/>
-				<area shape="rect" coords="555,120,640,155" href="pop_history.html" alt="History"/>
-				<area shape="rect" coords="710,170,860,210" href="pop_components.html" alt="Components"/>
-				<area shape="rect" coords="895,80,945,110" href="pop_uses.html" alt="Uses"/>
+				<area shape="rect" coords="410,150,500,203" alt="Home" href="index.html"/>
+				<area shape="rect" coords="610,120,700,155" href="pop_history.html" alt="History"/>
+				<area shape="rect" coords="780,170,910,220" href="pop_components.html" alt="Components"/>
+				<area shape="rect" coords="990,80,1050,110" href="pop_uses.html" alt="Uses"/>
 			</map>
 		</header>
 		
@@ -49,12 +48,12 @@
 				<div class="Timeline">
 					<img src="timeline.jpg" alt="timeline" usemap="#TimelineMap"/>
 					<map name="TimelineMap">
-						<area id="magicLantern" shape="circle" coords="240,20,20"  href="#" alt="magic"/>
-						<area id="filmProjector" shape="circle" coords="240,130,20" href="#" alt="film"/>
-						<area id="LCDProjector"shape="circle" coords="240,260,20" href="#" alt="LCD"/>
-						<area id="DLPTechnology" shape="circle" coords="240,375,20" href="#" alt="DLP"/>
-						<area id="Now" shape="circle" coords="240,485,20" href="#" alt="Now"/>
-						<area id="future" shape="circle" coords="240,580,20" href="#" alt="future"/>
+						<area id="magicLantern" shape="circle" coords="265,20,20"  href="#" alt="magic"/>
+						<area id="filmProjector" shape="circle" coords="265,140,20" href="#" alt="film"/>
+						<area id="LCDProjector"shape="circle" coords="270,275,20" href="#" alt="LCD"/>
+						<area id="DLPTechnology" shape="circle" coords="265,410,20" href="#" alt="DLP"/>
+						<area id="Now" shape="circle" coords="265,550,20" href="#" alt="Now"/>
+						<area id="future" shape="circle" coords="265,670,20" href="#" alt="future"/>
 					</map>
 				</div>
 				<div id="timelineInfo">
@@ -83,56 +82,62 @@
 				<li>- was used as main source for various pages and topics like components, uses, and definitions</li>
 				<li><a href="https://awolvision.com/blogs/awol-vision-blog/when-were-projectors-invented"><b>Set up your own wireless backyard cinema by CNET</b></a>
 				<li>- This video was not my own creation! please go give it a like at the link above!</li>
+				<li><a href="https://github.com/davidjbradshaw/image-map-resizer/blob/master/js/imageMapResizer.min.js"><b>image-map-resizer Code</b></a>
+				<li>- This website uses software licensed under the MIT License. Copyright (c) 2013-2019 David J. Bradshaw.</li>
 			</ul>
 			
 			<form id="survey">
-		<h2>Complete Survey for Rewards!</h2>
-			<fieldset id="userInfo">
-				<legend>Survey</legend>
-				<div class="formRow">
-					<label for="fname">First Name*</label>
-					<input type="text" id="fname" name="fname" required><br>
-					<label for="lname">Last Name*</label>
-					<input type="text" id="lname" name="lname" required><br>
-				</div>
+				<h2>Complete Survey for Rewards!</h2>
+				<fieldset id="userInfo">
+					<legend>Survey</legend>
+					<div class="formRow">
+						<label for="fname">First Name*</label>
+						<input type="text" id="fname" name="fname" required><br>
+						<label for="lname">Last Name*</label>
+						<input type="text" id="lname" name="lname" required><br>
+					</div>
 				
-				<div class="formRow">
-					<label for="phone">Phone number*</label>
-					<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" 
+					<div class="formRow">
+						<label for="phone">Phone number*</label>
+						<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" 
 						   pattern="(?:\d{10}|\(\d{3}\)\s\d{3}-\d{4}|\d{3}-\d{4})" required />
-				</div>
+					</div>
 				
-				<div class="formRow">
-				<label for="ageSpin">Age*</label>
-					<input name="age" id="ageSpin" type="number"
-					value="1" step="1" min="0" max="100" />
-				</div>
+					<div class="formRow">
+						<label for="ageSpin">Age*</label>
+						<input name="age" id="ageSpin" type="number"
+						value="1" step="1" min="0" max="100" />
+					</div>
 				
-				<div class="formRow">
-					<p>How did you Hear about us?</p>
-					<input type="radio" id="friend" name="how_heard" value="Friend">
-					<label for="Friend">Friend</label><br>
-					<input type="radio" id="work" name="how_heard" value="Work">
-					<label for="work">Work</label><br>
-					<input type="radio" id="school" name="how_heard" value="School">
-					<label for="school">School</label><br>
-					<input type="radio" id="other" name="how_heard" value="Other">
-					<label for="other">Other</label>
-				</div>
+					<div class="formRow">
+						<p>How did you Hear about us?</p>
+						<input type="radio" id="friend" name="how_heard" value="Friend">
+						<label for="Friend">Friend</label><br>
+						<input type="radio" id="work" name="how_heard" value="Work">
+						<label for="work">Work</label><br>
+						<input type="radio" id="school" name="how_heard" value="School">
+						<label for="school">School</label><br>
+						<input type="radio" id="other" name="how_heard" value="Other">
+						<label for="other">Other</label>
+					</div>
 				
-				<div class="formRow">
-					<label for="commBox">Tell us how to improve our website!</label>
-					<textarea name="custExp" id="commBox"></textarea>
-				</div>
-			</fieldset>
+					<div class="formRow">
+						<label for="commBox">Tell us how to improve our website!</label>
+						<textarea name="custExp" id="commBox"></textarea>
+					</div>
+				</fieldset>
 			
-			<div id="buttons">
-				<input type="submit" value="Submit Survey" />
-				<input type="reset" value="Reset" />
-			</div>
-		</form>
+				<div id="buttons">
+					<input type="submit" value="Submit Survey" />
+					<input type="reset" value="Reset" />
+				</div>
+			</form>
 		</footer>
-
+	
+		<script src="mapResizer.min.js"></script>
+		<script>
+			imageMapResize();
+		</script>
 	</body>
 
 </html>

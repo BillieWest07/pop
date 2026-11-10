@@ -218,7 +218,7 @@ td {
 
 #homeCenter .Timeline img {
     width: 40%;
-    height: 100%;
+    height: auto;
     float: left;
     border-radius: 0px;
     margin: auto;
@@ -372,7 +372,11 @@ div#buttons {
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+	
+	#timelineInfo p{
+		font-size: 0.8em;
+	}
+	
     #homeLeft {
         order: 2;
         min-width: 50%;
@@ -401,12 +405,13 @@ div#buttons {
 	}
 	
 	#timelineInfo p{
-		font-size: 0.8em;
-	}
+        margin-left: 0.4em;
+		margin-top: 0.5em;
+    }
 
     #timelineInfo {
         height: 35em;
-		width: 40%;
+		width: 42%;
     }
 
 
@@ -444,9 +449,10 @@ div#buttons {
         margin-top: 2.5em;
         margin-left: 0.5em;
     }
-
-    #timelineInfo {
+	
+	#timelineInfo {
         height: 30em;
+		width: 40%;
     }
 	
 	/* hide mini timeline photos */
